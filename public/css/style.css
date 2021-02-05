@@ -1,0 +1,216 @@
+:root{
+    --base-color: #e2e3e5;
+    --alpha-color: #ffffff;
+    --primary-color: #1f2d4a;
+    --secondary-color: #be288c;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    line-height: 1.8;
+    font-size: 1.1rem;
+    position: relative;
+    letter-spacing: 0.04em;
+    font-family: sans-serif;
+    color: var(--primary-color);
+    background-color: var(--alpha-color);
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header{
+    position: relative;
+    text-align: center;
+}
+
+.header h1{
+    font-size: 48px;
+    position: absolute;
+    top: -25px;
+    left: 35%;
+    right: 35%;
+    z-index: -1;
+    color: var(--base-color);
+}
+
+.header.h-white h1{
+    z-index: -1;
+    color: var(--alpha-color);
+}
+
+.content a.cta-btn{
+    padding: 10px 30px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: var(--alpha-color);
+    background-color: var(--secondary-color);
+    box-shadow: 0px 0px 10px 2px var(--base-color);
+}
+
+.hero, .whoweare, .work, .contact{
+    min-height: 50vh;
+}
+
+.whoweare, .work, .contact{
+    padding: 96px 0px;
+}
+
+.hero .content a{
+    margin: 16px 0px;
+}
+
+.hero .content a > img{
+    height: 128px;
+    object-fit: fill;
+    -o-object-fit: fill;
+    object-position: center;
+    -o-object-position: center;
+}
+
+.hero .content .navigate{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+}
+
+.content .navigate ul li{
+    float: left;
+    padding: 24px 32px;
+    list-style: none;
+}
+
+.content .navigate ul li:hover{
+    background-color: var(--secondary-color);
+}
+
+.navigate ul li a{
+    color: var(--alpha-color);
+    text-decoration: none;
+}
+
+.navigate ul li:hover > a{
+    color: var(--primary-color);
+}
+
+.hero .content .hero-main{
+    width: 100%;
+    min-height: 70vh;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--base-color);
+}
+
+
+.work{
+    position: relative;
+}
+
+.work::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    background-color: var(--base-color);
+}
+
+.content .content-icon svg{
+    height: 64px;
+    fill: var(--secondary-color);
+}
+
+.content .content-icon svg:hover{
+    fill: var(--primary-color);
+}
+
+.contact .form-control{
+    height: max-content;
+    border: none;
+}
+
+.form-control .form-group > *{
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.form-control .form-half{
+    display: inline-block;
+    width: 46%;
+}
+
+.form-control .form-half.pr-2{
+    position: relative;
+    right: -7%;
+}
+
+
+.form-control .form-group input::placeholder,
+.form-control .form-group textarea::placeholder{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.form-control .form-group textarea{
+    padding: 8px 16px;
+}
+
+.form-control input[type=submit]{
+    width: 40%;
+    height: 45px;
+    color: var(--alpha-color);
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+    border: none;
+}
+
+.foot{
+    position: relative;
+    bottom: 0;
+    background-color: var(--base-color);
+}
+
+.foot .content > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot .content > div img{
+    height: 128px;
+} 
+
+.foot .foot-info{
+    padding: 16px;
+    position: absolute;
+    top: -100px;
+    left: 60px;
+    color: var(--alpha-color);
+    background-color: var(--primary-color);
+    box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.35);
+}
+
+.foot .foot-info h3{
+    text-align: center;
+}
+
+.foot .foot-info ul,
+.foot .foot-info p{
+    list-style: none;
+    font-size: 0.875rem;
+}
